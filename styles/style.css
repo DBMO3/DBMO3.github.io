@@ -1,0 +1,68 @@
+
+/* Define the styles for the h1 and footer elements */
+h1, footer{
+    /* Center the text horizontally */
+    text-align: center;
+    /* Set the font family */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* Add padding around the text */
+    padding: 10px;
+
+    border-radius: 100px;
+    /* Set the background color to black */
+    background-color: black;
+    /* Set the text color to white */
+    color: white;
+
+    justify-content: space-between;
+    /*Quitar las lineas del footer de hiperlink*/
+}
+
+
+/* Define the styles for the nav element */
+nav{
+    /* Center the text horizontally */
+    text-align: center;
+    /* Set the font family */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+img{
+    height: 250px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 300px;
+    /*expandir el borde de la imagen*/
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*Ajustar boton en el centro*/
+button{
+    color: white;
+    background-color: black;
+    border-radius: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+button:active, button:focus {
+    outline: none;
+}
+
+button:hover{
+    color: white;
+    background-color: white;
+}
+
+/*Ajustar caja de text en section*/
+div {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
