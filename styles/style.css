@@ -1,64 +1,72 @@
-h1, footer{
+/* Estilo para encabezados y pie de página */
+h1, footer {
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 10px;
     border-radius: 100px;
-    background-color: black; 
+    background-color: #333; /* Cambié el color a un tono más oscuro */
     color: white;
     justify-content: space-between;
 }
 
-nav{
+/* Estilo para la barra de navegación */
+nav {
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-p{
+/* Estilo para párrafos */
+p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 15px; /* Añadí un espacio inferior para mejorar la legibilidad */
 }
 
-img{
+/* Estilo para la imagen del perfil */
+img {
+    display: block; /* Añadí display: block para centrar la imagen */
+    margin: 0 auto; /* Centrar la imagen */
     height: 250px;
-    border-style: solid;
-    border-color: black;
-    border-radius: 300px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 50%; /* Cambié el borde a un círculo */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-/*Ajustar boton en el centro*/
-button{
+/* Estilo para el botón de contacto */
+button {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-decoration: none;
     color: white;
-    background-color: black;
-    border-radius: 500px;
+    background-color: #333; /* Cambié el color a un tono más oscuro */
+    border-radius: 25px; /* Reduje el radio para que se vea más limpio */
+    padding: 10px 20px; /* Añadí más espacio interno para mejorar la apariencia */
+    margin: 15px 0; /* Añadí margen superior e inferior */
     margin-left: auto;
     margin-right: auto;
     display: block;
+    cursor: pointer; /* Añadí un cursor al botón para indicar que es interactivo */
 }
 
-a{
+/* Estilo para los enlaces */
+a {
     text-decoration: none;
-    color: white;
+    color: #66ccff; /* Cambié el color a un tono más claro para resaltar los enlaces */
 }
 
-button:hover, a:hover{
+/* Estilo al pasar el ratón sobre el botón o los enlaces */
+button:hover, a:hover {
     opacity: 0.7;
-    text-decoration: none;
-    color: black;
-    background-color: white;
 }
 
+/* Estilo para el contenedor principal */
 div {
     width: 70%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto; /* Centrar el contenedor */
 }
 
-li{
-    background-color: black;
+/* Estilo para elementos de lista */
+li {
+    background-color: #333; /* Cambié el color a un tono más oscuro */
     color: white;
-    padding: auto;
-    border-radius: 200px;
+    padding: 10px;
+    border-radius: 25px;
+    margin-bottom: 10px; /* Añadí margen inferior */
 }

@@ -5,14 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="website icon" href="img/icon.png">
     <title>DBMO3</title>
 </head>
 
 <body>
 
-    <h1>DBMO3</h1>
+    <h1> DBMO3</h1>
     <nav>
-        <img src="img/image.jpg" alt="Dylan Bernal Mora (AKA. DBMO3)">
+        <img src="img/image.jpg" alt="Foto de Dylan Bernal Mora (AKA. DBMO3)">
         <h3>Dylan Bernal Mora (AKA. DBMO3)</h3>
         <div section>
             <h3>Una pequeña biografia</h3>
@@ -23,22 +24,22 @@
                 Administración en la carrera de Licenciatura de Informática</p>
             <h3>En busca de experiencia laboral (Habilidades)</h3>
             <li>
-                Soporte Técnico
+                <a href="pages/Soporte.html">Soporte Técnico</a>
             </li>
             <p>Experiencia en diagnóstico y solución de problemas en dispositivos móviles, computadoras y
                 videojuegos. Ofrezco soporte técnico presencial y remoto.</p>
             <li>
-                Programación
+                <a href="pages/Programacion.html">Programación</a>
             </li>
             <p>Habilidades en desarrollo de software utilizando lenguajes como Java/C++.
                 Experiencia en creación y mantenimiento de aplicaciones.</p>
             <li>
-                Informática Forense
+                <a href="pages/Forense.html">Informática Forense</a>
             </li>
             <p>Conocimientos en técnicas de investigación digital y análisis forense. Capacidad para identificar y
                 responder a incidentes de seguridad.</p>
             <li>
-                Redes
+                <a href="pages/Redes.html">Redes</a>
             </li>
             <p>Configuración y administración de redes. Experiencia en diseño e implementación de infraestructuras
                 de red.</p>
@@ -53,7 +54,7 @@
                 data-share-badge-host="https://www.credly.com"></div>
             <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
             <li>
-                Ciberseguridad
+                <a href="pages/Ciberseguridad.html">Ciberseguridad</a>
             </li>
             <p>Comprensión de las mejores prácticas de seguridad informática. Habilidades en detección y mitigación
                 de amenazas cibernéticas.</p>
@@ -72,14 +73,20 @@
                 conocimientos. ¡Espero saber de ti pronto!</p>
     </nav>
     <button>
-        <a href="https://api.whatsapp.com/send/?phone=7775693746" target="_blank" rel="noopener noreferrer">
             <p>Contactame :D</p>
-        </a>
     </button>
+    <script>
+        // Script from button
+        var button = document.querySelector("button");
+        button.onclick = function () {
+            alert("¡Gracias por visitar mi sitio web!");
+            alert("Serás teletransportado a mi WhatsApp Oficial")
+            window.open("https://wa.me/527775693746");
+        }
+    </script>
     <br>
 </body>
 <footer>
     <p>&copy; 2023 DBMO3</p>
 </footer>
-
 </html>
