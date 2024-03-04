@@ -8,8 +8,8 @@
   <link href="resource/img/icon.png" rel="website icon" />
   <style>
     .nav-link {
-      padding: 20px;
-      border-radius: 20px;
+      padding: 5px;
+      border-radius: 5px;
       transition: background-color 0.3s, color 0.3s;
     }
 
@@ -42,42 +42,28 @@
       <img src="resource/img/image.jpg" alt="Dylan Bernal Mora" class="rounded-full mx-auto mb-4 animate-fade-in"
         style="width: 200px;">
       <h1 class="text-2xl font-bold text-white mb-2 animate-fade-in text-center">Dylan Bernal Mora</h1>
-      <p class="text-gray-400 animate-fade-in">Transformando tus ideas en soluciones</p>
+      <p class="text-gray-400 animate-fade-in text-center">Transformando tus ideas en soluciones</p>
     </div>
-    <section id="about" class="bg-gray-900 py-10">
-      <div class="container mx-auto">
-        <div class="max-w-lg mx-auto">
-          <div class="flex items-center p-4 bg-white rounded-lg shadow-lg animate-fade-in">
-            <div>
-              <h2 class="text-xl font-bold mb-2">Sobre mi</h2>
-              <p class="text-gray-700">¡Hola! Mi nombre es Dylan Bernal Mora, soy estudiante de la Facultad de
-                Contaduría, Administración e Informática de la Universidad Autónoma del Estado de Morelos. Durante mi
-                tiempo en la universidad, he estado explorando diferentes áreas de la informática, desde redes y
-                seguridad hasta programación y administración de sistemas. Mi pasión por la tecnología me ha llevado a
-                buscar oportunidades para ampliar mis conocimientos y habilidades en este campo en constante evolución.
-                Estoy emocionado por continuar mi aprendizaje y contribuir al mundo de la tecnología de la información.
-            </div>
+  </section>
+
+  <section id="about" class="bg-gray-900 py-10">
+    <div class="container mx-auto">
+      <div class="max-w-lg mx-auto">
+        <div class="flex items-center p-4 bg-white rounded-lg shadow-lg animate-fade-in">
+          <div>
+            <h2 class="text-xl font-bold mb-2">Sobre mi</h2>
+            <p class="text-gray-700">¡Hola! Mi nombre es Dylan Bernal Mora, soy estudiante de la Facultad de
+              Contaduría, Administración e Informática de la Universidad Autónoma del Estado de Morelos. Durante mi
+              tiempo en la universidad, he estado explorando diferentes áreas de la informática, desde redes y
+              seguridad hasta programación y administración de sistemas. Mi pasión por la tecnología me ha llevado a
+              buscar oportunidades para ampliar mis conocimientos y habilidades en este campo en constante evolución.
+              Estoy emocionado por continuar mi aprendizaje y contribuir al mundo de la tecnología de la información.
+            </p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
   </section>
-
-  <style>
-    .animate-fade-in {
-      animation: fade-in 1s ease-in-out;
-    }
-
-    @keyframes fade-in {
-      0% {
-        opacity: 0;
-      }
-
-      100% {
-        opacity: 1.5;
-      }
-    }
-  </style>
 
   <section id="skills" class="bg-gray-800 py-10">
     <div class="container mx-auto animate-fade-in">
@@ -241,6 +227,21 @@
     </div>
   </section>
 
+  <footer class="bg-gray-900">
+    <div class="container mx-auto py-4 px-4">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div>
+          <span class="text-gray-100">© 2024 DBMO3. Todos los derechos reservados</span>
+        </div>
+        <div class="mt-4 md:mt-0">
+          <a href="#" class="text-gray-100 mx-2 hover:underline">Terminos y condiciones</a>
+          <a class="text-gray-100 mx-2">|</a>
+          <a href="#" class="text-gray-100 mx-2 hover:underline">Politicas de privacidad</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
   <script>
     document.querySelector('.nav-link').addEventListener('click', function (event) {
       event.preventDefault();
@@ -249,17 +250,4 @@
   </script>
 </body>
 
-<footer class="bg-gray-900">
-  <div class="container mx-auto py-4 px-4">
-    <div class="flex flex-col md:flex-row justify-between items-center">
-      <div>
-        <span class="text-gray-100">© 2024 DBMO3. Todos los derechos reservados</span>
-      </div>
-      <div class="mt-4 md:mt-0">
-        <a href="#" class="text-gray-100 mx-2 hover:underline">Terminos y condiciones</a>
-        <a class="text-gray-100 mx-2">|</a>
-        <a href="#" class="text-gray-100 mx-2 hover:underline">Politicas de privacidad</a>
-      </div>
-    </div>
-  </div>
-</footer>
+</html>
