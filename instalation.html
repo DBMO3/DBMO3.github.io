@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+  <link href="resource/img/icon.png" rel="website icon" />
+  <style>
+    .nav-link {
+      padding: 5px;
+      border-radius: 5px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .nav-link:hover {
+      background-color: white;
+      color: black;
+    }
+
+    .animate-fade-in {
+      animation: fade-in 1s ease-in-out;
+    }
+
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+  <title>Guia de instalación TeamViewer</title>
+</head>
+
+<body class="bg-gray-900">
+  <nav class="bg-gray-900">
+    <div class="container mx-auto px-4">
+      <div class="flex items-center justify-between h-16">
+        <div class="flex items-center">
+          <a href="index.html" class="nav-link ml-10 text-blue-50 hover:text-white font-medium">Regresar</a>
+        </div>
+        <div class="block md:hidden">
+          <button type="button" class="text-gray-500 hover:text-white focus:outline-none focus:text-white">
+            <!-- Menu icon -->
+            <svg class="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <h1 class="text-3xl font-bold text-gray-100 mb-6 text-center animate-fade-in">Guia de instalación de TeamViewer
+    QuickSupport</h1>
+  <div class="flex justify-center mt-10 animate-fade-in">
+    <button id="btn-windows"
+      class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mx-2">Windows</button>
+
+    <button id="btn-android"
+      class="bg-green-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mx-2">Android</button>
+    <button id="btn-ios" class="bg-gray-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mx-2">iOS</button>
+  </div>
+
+  <div id="modal-windows" class="modal fixed z-10 inset-0 overflow-y-auto hidden">
+    <div class="flex items-center justify-center min-h-screen">
+      <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+      <div class="modal-container bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto">
+        <div class="modal-content py-4 text-left px-6">
+          <h1 class="text-3xl font-bold text-gray-900 mb-6">Instalación de TeamViewer para Windows</h1>
+          <p><strong>Paso 1.</strong> Descargar el ejecutable <a href="https://download.teamviewer.com/download/TeamViewerQS_x64.exe?utm_source=bing&utm_medium=cpc&utm_campaign=mx%7Cb%7Cpr%7C23%7Cmar%7Ctv-core-brand-only-sn%7Cnew%7Ct0%7C0&utm_content=Phrase&utm_term=teamviewer"><strong style="color: blue;">aqui</strong></a></p>
+          <p><strong>Paso 2.</strong> Busca en el administrador de archivos el ejecutable (normalmente en Downloads o Descargas dependiendo el idioma de tu equipo), da clic derecho y selecciona ejecutar como administrador y acepta los permisos dando clic en <strong>si</strong></p>
+          <p><strong>Paso 3.</strong> Marcar la casilla <strong>Acepto el contrato de licencia de usuario final y el acuerdo de tratamiento de datos y clic en Continuar</strong></p>
+          <p><strong>Paso 4.</strong> Brindarme su ID y contraseña iniciar la sesión remota <a href="resource/img/image1.png"><strong style="color: blue;">(Ver imagen)</strong></a></p>
+          <button id="close-modal-windows"
+            class="mt-6 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-android" class="modal fixed z-10 inset-0 overflow-y-auto hidden">
+    <div class="flex items-center justify-center min-h-screen">
+      <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+      <div class="modal-container bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto">
+        <div class="modal-content py-4 text-left px-6">
+          <h1 class="text-3xl font-bold text-gray-900 mb-6">Instalación de TeamViewer para Android</h1>
+          <p><strong>Paso 1.</strong> Descargar la app <a href="https://play.google.com/store/apps/details?id=com.teamviewer.quicksupport.market&utm_source=bing&utm_medium=cpc&utm_campaign=mx%7Cb%7Cpr%7C23%7Cmar%7Ctv-core-brand-only-sn%7Cnew%7Ct0%7C0&utm_content=Phrase&utm_term=teamviewer&pli=1"><strong style="color: blue;">aqui</strong></a></p>
+          <p><strong>Paso 2.</strong> Descargar el complemento <a href="https://play.google.com/store/apps/details?id=com.teamviewer.quicksupport.addon.universal"><strong style="color: blue;">aqui</strong></a></p>
+          <p><strong>Paso 3.</strong> Abrir la app de TeamViewer y <strong>aceptar el EULA y el DPA</strong></p>
+          <p><strong>Paso 4.</strong> Presiona el boton <strong>Get Started</strong></p>
+          <p><strong>Paso 5.</strong> TeamViewer te solicitara permisos, presiona <strong>Aceptar/Ir a configuración</strong></p>
+          <p><strong>Paso 6.</strong> Buscar la aplicación de TeamViewer y activarla <a href="resource/img/step5.jpg"><strong style="color: blue;">Ver imagen</strong></a></p>
+          <p><strong>Paso 7.</strong> Activar las notificaciones <a href="resource/img/step6.jpg"><strong style="color: blue;">Ver imagen</strong></a></p>
+          <p><strong>Paso 8.</strong> Activar el complemento <a href="resource/img/step7.jpg"><strong style="color: blue;">Ver imagen</strong></a></p>
+          <p><strong>Paso 9.</strong> Buscar en la sección de aplicaciones descargadas y activar <strong>TeamViewer Universal Add-On </strong><a href="resource/img/step9.jpg"><strong style="color: blue;"> Ver imagen</strong></a></p>
+          <p><strong>Paso 10.</strong> Brindar el ID y Activar compartir para comenzar el soporte remoto<a href="resource/img/step12.jpg"><strong style="color: blue;"> Ver imagen</strong></a></p>
+          <p><strong style="color: red;"> NOTA IMPORTANTE:</strong> Guarda todo trabajo que hayas realizado y cierra todas las aplicaciones que estes usando. En caso de que te aparezca <a href="resource/img/soporte.jpg"><strong style="color: orange">este cuadro</strong></a> Presiona el boton<strong> Permitir</strong> seguido te aparecera otro cuadro de información de la información de la persona, presiona <strong> Continua</strong> y con esto se comienza a brindar asistencia remota :D</p>
+          <button id="close-modal-android"
+            class="mt-6 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-ios" class="modal fixed z-10 inset-0 overflow-y-auto hidden">
+    <div class="flex items-center justify-center min-h-screen">
+      <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+      <div class="modal-container bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto">
+        <div class="modal-content py-4 text-left px-6">
+          <h1 class="text-3xl font-bold text-gray-900 mb-6">Instalación de TeamViewer para iOS</h1>
+          <p>Proximamente</p>
+          <button id="close-modal-ios"
+            class="mt-6 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+<footer class="bg-gray-900">
+  <div class="container mx-auto py-4 px-4">
+    <div class="flex flex-col md:flex-row justify-between items-center">
+      <div>
+        <span class="text-gray-100">© 2024 DBMO3. Todos los derechos reservados. </span>
+        <span class="text-gray-100">Nota Importante: Estoy trabajando arduamente en el desarrollo de esta página. Puede haber errores y fallos durante la navegación. Agradezco tu comprensión y paciencia mientras mejoramos la experiencia para ti.
+        </span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const btnWindows = document.getElementById('btn-windows');
+  const btnAndroid = document.getElementById('btn-android');
+  const btnIOS = document.getElementById('btn-ios');
+
+  const modalWindows = document.getElementById('modal-windows');
+  const modalAndroid = document.getElementById('modal-android');
+  const modalIOS = document.getElementById('modal-ios');
+
+  const closeModalWindows = document.getElementById('close-modal-windows');
+  const closeModalAndroid = document.getElementById('close-modal-android');
+  const closeModaliOS = document.getElementById('close-modal-ios');
+
+  const showWindowsModal = () => {
+    modalWindows.classList.remove('hidden');
+  };
+
+  const showAndroidModal = () => {
+    modalAndroid.classList.remove('hidden');
+  };
+
+  const showIOSModal = () => {
+    modalIOS.classList.remove('hidden');
+  };
+
+  btnWindows.addEventListener('click', showWindowsModal);
+  btnAndroid.addEventListener('click', showAndroidModal);
+  btnIOS.addEventListener('click', showIOSModal);
+
+  closeModalWindows.addEventListener('click', () => {
+    modalWindows.classList.add('hidden');
+  });
+  closeModalAndroid.addEventListener('click', () => {
+    modalAndroid.classList.add('hidden');
+  });
+  closeModaliOS.addEventListener('click', () => {
+    modalIOS.classList.add('hidden');
+  });
+
+  // Selecciona todos los enlaces dentro de la ventana modal
+const imageLinks = document.querySelectorAll('#modal-android a');
+
+// Agrega un controlador de eventos a cada enlace
+imageLinks.forEach(link => {
+  link.addEventListener('click', event => {
+    // Previene el comportamiento predeterminado del enlace
+    event.preventDefault();
+
+    // Muestra la imagen en una nueva ventana o pestaña
+    window.open(link.href);
+  });
+});
+
+</script>

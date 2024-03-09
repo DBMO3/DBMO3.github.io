@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+  <link href="resource/img/icon.png" rel="website icon" />
+  <style>
+    .nav-link {
+      padding: 5px;
+      border-radius: 5px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .nav-link:hover {
+      background-color: white;
+      color: black;
+    }
+
+    .animate-fade-in {
+      animation: fade-in 1s ease-in-out;
+    }
+
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+  <title>DBMO3</title>
+</head>
+
+<body class="bg-gray-900">
+  <nav class="bg-gray-900">
+    <div class="container mx-auto px-4">
+      <div class="flex items-center justify-center h-16">
+        <div class="flex items-center">
+          <a href="#skills" class="nav-link ml-10 text-blue-50 hover:text-white font-medium">Skills</a>
+          <a href="#about" class="nav-link ml-10 text-blue-50 hover:text-white font-medium">Sobre mi</a>
+          <a href="#contact" class="nav-link ml-10 text-blue-50 hover:text-white font-medium">Contactame</a>
+          <a href="#faq" class="nav-link ml-10 text-blue-50 hover:text-white font-medium">FAQ</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="bg-gray-900 flex justify-center items-center h-screen">
+    <div class="max-w-lg p-4">
+      <img src="resource/img/image.jpg" alt="Dylan Bernal Mora" class="rounded-full mx-auto mb-4 animate-fade-in"
+        style="width: 200px;">
+      <h1 class="text-2xl font-bold text-white mb-2 animate-fade-in text-center">Dylan Bernal Mora</h1>
+      <p class="text-gray-400 animate-fade-in text-center">Transformando tus ideas en soluciones</p>
+    </div>
+  </section>
+
+  <section id="about" class="bg-gray-900 py-10">
+    <div class="container mx-auto">
+      <div class="max-w-lg mx-auto">
+        <div class="flex items-center p-4 bg-white rounded-lg shadow-lg animate-fade-in">
+          <div>
+            <h2 class="text-xl font-bold mb-2">Sobre mi</h2>
+            <p class="text-gray-700">¡Hola! Mi nombre es Dylan Bernal Mora, soy estudiante de la Facultad de
+              Contaduría, Administración e Informática de la Universidad Autónoma del Estado de Morelos. Durante mi
+              tiempo en la universidad, he estado explorando diferentes áreas de la informática, desde redes y
+              seguridad hasta programación y administración de sistemas. Mi pasión por la tecnología me ha llevado a
+              buscar oportunidades para ampliar mis conocimientos y habilidades en este campo en constante evolución.
+              Estoy emocionado por continuar mi aprendizaje y contribuir al mundo de la tecnología de la información.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="bg-gray-800 py-10">
+    <div class="container mx-auto animate-fade-in">
+      <h1 class="text-3xl font-bold text-gray-100 mb-6 text-center">Skills</h1>
+      <div class="shadow-lg rounded-lg bg-white p-4 md:p-6">
+        <h2 class="text-xl font-bold mb-4 text-center">Certificaciones</h2>
+        <p class="text-gray-900 mt-4 text-center">
+          Como especialista en redes certificado por Cisco, he adquirido sólidos conocimientos en configuración,
+          administración y seguridad de redes. También tengo experiencia en ciberseguridad y defensa en la red. Además,
+          he completado con éxito cursos de inglés para IT y Linux, obteniendo una base sólida en estos campos.
+          Además de mi formación académica, también me dedico al soporte técnico en PC, Smartphones y consolas de
+          videojuegos. Brindo asistencia remota por TeamViewer en PC, Smartphones y GNU/Linux para garantizar que los
+          usuarios obtengan el mejor rendimiento de sus dispositivos y sistemas operativos.
+        </p><br>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+          <div class="badge-container flex items-center justify-center">
+            <img class="badge-img" src="resource/img/networking-basics.png" alt="Networking Basics">
+          </div>
+          <div class="badge-container flex items-center justify-center">
+            <img class="badge-img" src="resource/img/introduction-to-cybersecurity.png"
+              alt="Introduction to Cybersecurity">
+          </div>
+          <div class="badge-container flex items-center justify-center">
+            <img class="badge-img" src="resource/img/network-defense.png" alt="Network Defense">
+          </div>
+          <div class="badge-container flex items-center justify-center">
+            <img class="badge-img" src="resource/img/english-for-it-1.png" alt="English for IT">
+          </div>
+          <div class="badge-container flex items-center justify-center">
+            <img class="badge-img" src="resource/img/linux.png" alt="NDG Linux Unhatched">
+          </div>
+          <div class="badge-container flex items-center justify-center">
+            <img class="badge-img" src="resource/img/redhat.png" alt="Red Hat Academy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="bg-gray-800 py-10">
+    <div class="container mx-auto animate-fade-in">
+      <div class="max-w-lg mx-auto">
+        <h2 class="text-gray-200 text-3xl font-bold mb-8 text-center">Preguntas más frecuentes</h2>
+        <div class="accordion">
+          <div class="accordion-item">
+            <div class="accordion-title">
+              <p class="text-gray-200 mt-4 text-center">
+                <strong>
+                  ¿Qué servicios de soporte técnico ofreces?
+                </strong>
+              </p>
+            </div>
+            <div class="accordion-content">
+              <p class="text-gray-200 mt-4 text-center">
+                Ofrezco una amplia gama de servicios de soporte técnico, que incluyen solución de problemas de hardware
+                y software, configuración de redes, instalación y actualización de software, recuperación de datos,
+                asistencia remota, y más. Si tienes alguna necesidad específica, no dudes en preguntar.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-title">
+              <p class="text-gray-200 mt-4 text-center">
+                <strong>¿Cómo puedo contactarte para solicitar asistencia técnica?</strong>
+              </p>
+            </div>
+            <div class="accordion-content">
+              <p class="text-gray-200 mt-4 text-center">
+                Puedes contactarme a través de mi Facebook. También puedes enviarme un mensaje a través de WhatsApp.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-title">
+              <p class="text-gray-200 mt-4 text-center">
+                <strong>¿Cuál es tu disponibilidad para atender solicitudes de soporte?</strong>
+              </p>
+            </div>
+            <div class="accordion-content">
+              <p class="text-gray-200 mt-4 text-center">
+                Estoy disponible de lunes a viernes de 3:00 pm a 7:00 pm y sabado y domingo de 12:00 pm a 6:00 pm. Si
+                tienes una emergencia fuera de este horario, por favor contáctame y haré todo lo posible para ayudarte
+                lo antes posible.
+              </p>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-title">
+                <p class="text-gray-200 mt-4 text-center">
+                  <strong>¿Proporcionas soporte remoto?</strong>
+                </p>
+              </div>
+              <div class="accordion-content">
+                <p class="text-gray-200 mt-4 text-center">
+                  Sí, ofrezco soporte remoto a través de TeamViewer. Esto me permite resolver problemas de manera rápida
+                  y eficiente sin necesidad de visitar tu ubicación física. Puedes encontrar la guía de instalación de
+                  TeamViewer <strong><a style="color: blue;" href="instalation.html">aqui</a></strong>
+                </p>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-title">
+                  <p class="text-gray-200 mt-4 text-center">
+                    <strong>¿Cuál es tu política de tarifas y métodos de pago?</strong>
+                  </p>
+                </div>
+                <div class="accordion-content">
+                  <p class="text-gray-200 mt-4 text-center">
+                    Mis tarifas varían según el tipo de servicio y la complejidad del problema. Para obtener un
+                    presupuesto personalizado, por favor contáctame. Acepto pagos en efectivo, transferencia bancaria,
+                    PayPal y MercadoPago.
+                  </p>
+                </div>
+                <div class="accordion-item">
+                  <div class="accordion-title">
+                    <p class="text-gray-200 mt-4 text-center">
+                      <strong>¿Cómo garantizas la confidencialidad de mis datos durante el proceso de soporte?</strong>
+                    </p>
+                  </div>
+                  <div class="accordion-content">
+                    <p class="text-gray-200 mt-4 text-center">
+                      Respeto la privacidad y confidencialidad de tus datos en todo momento. Utilizo medidas de
+                      seguridad adecuadas para proteger la información confidencial y me comprometo a no compartir tus
+                      datos con terceros sin tu consentimiento.
+                    </p>
+                  </div>
+                  <div class="accordion-item">
+                    <div class="accordion-title">
+                      <p class="text-gray-200 mt-4 text-center">
+                        <strong>¿Ofreces servicios de mantenimiento preventivo?</strong>
+                      </p>
+                    </div>
+                    <div class="accordion-content">
+                      <p class="text-gray-200 mt-4 text-center">
+                        Sí, ofrezco servicios de mantenimiento preventivo para ayudar a mantener tus sistemas en óptimas
+                        condiciones y prevenir problemas futuros. Esto incluye actualizaciones de software, limpieza de
+                        hardware, optimización del sistema y más.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+  </section>
+
+  <section id="contact" class="bg-gray-900 py-10">
+    <div class="container mx-auto animate-fade-in">
+      <h1 class="text-3xl font-bold text-gray-100 mb-10 text-center">¡Contáctame!</h1>
+      <div class="flex justify-center space-x-4">
+        <a href="https://wa.me/527775693746"
+          class="bg-green-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded inline-flex items-center">
+          WhatsApp
+        </a>
+        <a href="https://facebook.com/dylanbernal360"
+          class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded inline-flex items-center">
+          Facebook
+        </a>
+        <a href="https://github.com/DBMO3"
+          class="bg-gray-600 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded inline-flex items-center">
+          GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
+
+<footer class="bg-gray-900">
+  <div class="container mx-auto py-4 px-4">
+    <div class="flex flex-col md:flex-row justify-between items-center">
+      <div>
+        <span class="text-gray-100">© 2024 DBMO3. Todos los derechos reservados.</span>
+        <span class="text-gray-100">Nota Importante: Estoy trabajando arduamente en el desarrollo de esta página. Puede haber errores y fallos durante la navegación. Agradezco tu comprensión y paciencia mientras mejoramos la experiencia para ti.
+        </span>
+      </div>
+    </div>
+  </div>
+  
+</footer>
+
+<script>
+  document.querySelector('.nav-link').addEventListener('click', function (event) {
+    event.preventDefault();
+    document.querySelector('#skills', '#about_me', '#contact', '#faq').scrollIntoView({ behavior: 'smooth' });
+  });
+</script>
